@@ -1,7 +1,21 @@
+//Vars
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$HeroImage : "../images/hero-image.jpg";
+
+// Colors
+
+$BaseColor:   #40403c;
+$HeroColor:   #FF1A38;
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+.hero {
+  background: url($HeroImage) no-repeat 0 0;
+  background-size: cover ;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -12,8 +26,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0px;
+  margin: 0px;
+  background-color: lighten($BaseColor, 90%);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -55,7 +70,9 @@ body {
   .btn {
     font-size: 21px;
     padding: 14px 24px;
+    background-color: $HeroColor;
   }
+  background-color: none;
 }
 
 /* Supporting marketing content */
