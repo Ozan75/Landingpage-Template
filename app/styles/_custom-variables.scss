@@ -5,9 +5,13 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 // Theme Custimzation
 
 $HeroImage: 	"../images/hero-image.jpg";
-$HeroEmbed:		cover;
-$HeroHeight:	550px;
+$HeroEmbed:		auto;
+$HeroHeight:	600px;
+$HeroPosition:	center -100px;
 
+$LogoSmall:			"../images/logo_small.png";
+$LogoSmallHeight: 	40px;
+$LogoSmallWidth:	138px;
 
 //== Colors
 //
