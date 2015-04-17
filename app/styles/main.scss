@@ -1,25 +1,15 @@
+
 //Vars
 @import 'custom-variables';
+@import 'hero';
+@import 'trustbanner';
+@import 'navigation';
+
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-
-
-.hero {
-  background: url($HeroImage) no-repeat 0 0;
-  background-size: $HeroEmbed;
-  background-position: $HeroPosition;
-  height: $HeroHeight;
-}
-
-.logo-header {
-  background: url($LogoSmall) no-repeat 0 0;
-  height: $LogoSmallHeight;
-  width: $LogoSmallWidth;
-  margin: 10px 0;
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -31,6 +21,15 @@
 
 /* Custom page header */
 
+
+/* Colorpalette */
+
+.cl_1 { background-color: $gray-darker; height:30px;}
+.cl_2 { background-color: $gray-dark; height:30px;}
+.cl_3 { background-color: $BaseColor; height:30px;}
+.cl_4 { background-color: $gray; height:30px;}
+.cl_5 { background-color: $gray-light; height:30px;}
+.cl_6 { background-color: $gray-lighter; height:30px;}
 
 /* Custom page footer */
 .footer {
@@ -52,31 +51,8 @@
     padding: 14px 24px;
     background-color: $brand-primary;
   }
+  h1, p {
+    color: $gray-lighter;
+  }
   background: transparent;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }

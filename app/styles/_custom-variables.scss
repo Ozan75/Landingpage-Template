@@ -13,15 +13,19 @@ $LogoSmall:			"../images/logo_small.png";
 $LogoSmallHeight: 	40px;
 $LogoSmallWidth:	138px;
 
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              lighten(#000, 20%) !default;   // #333
-$gray:                   lighten(#000, 33.5%) !default; // #555
-$gray-light:             lighten(#000, 46.7%) !default; // #777
-$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$BaseColor:		#70735F;
+
+$gray-darker:	darken($BaseColor, 40%) !default;
+$gray-dark:     darken($BaseColor, 20%) !default;
+$gray:          lighten($BaseColor, 20%) !default;
+$gray-light:    lighten($BaseColor, 40%) !default;
+$gray-lighter:  lighten($BaseColor, 50%) !default;
+
 
 $brand-primary:         #cc1220 !default;
 $brand-success:         #5cb85c !default;
@@ -29,17 +33,41 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
-
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               	#fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            	$gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            	$gray-lighter !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      	darken($link-color, 15%) !default;
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color:	$gray-lighter !default;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg:       $gray-dark !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  'Roboto', Helvetica, Arial, sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+//Spacings
+$spacer-small:	15px;
+$spacer:		30px;
+$spacer-big:	60px;

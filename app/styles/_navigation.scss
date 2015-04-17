@@ -1,0 +1,15 @@
+// Navigation
+
+.header {
+	.logo {
+	  background: url($LogoSmall) no-repeat 0 0;
+	  height: $LogoSmallHeight;
+	  width: $LogoSmallWidth;
+	  margin: 10px 0;
+	}
+
+	.btn {
+		margin-left: $spacer-small;
+	}
+}
+
