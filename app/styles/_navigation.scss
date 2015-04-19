@@ -13,3 +13,20 @@
 	}
 }
 
+.nav-pills {
+	li {
+
+		&.active > a{
+			background-color: $nav-pills-active-bg-color;
+			border-bottom: 1px $component-active-color solid;
+		}
+
+		& > a {
+			&:hover, &.focus {
+				color: $gray-darker !important;
+				border-bottom: none;
+			}
+		}
+	}
+}
+

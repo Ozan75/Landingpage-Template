@@ -34,7 +34,7 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 //** Background color for `<body>`.
-$body-bg:               	#fff !default;
+$body-bg:               	lighten($gray-lighter, 8%) !default;
 //** Global text color on `<body>`.
 $text-color:            	$gray-dark !default;
 
@@ -48,6 +48,11 @@ $component-active-color:	$gray-lighter !default;
 //** Global background color for active items (e.g., navs or dropdowns).
 $component-active-bg:       $gray-dark !default;
 
+
+//** Nav Links
+$nav-pills-hover-color:			$gray-dark !default;
+$nav-pills-active-bg-color:		transparent !important;
+$border-radius-base:			0px;
 
 //== Typography
 //
