@@ -21,6 +21,13 @@
 			border-bottom: 1px $component-active-color solid;
 		}
 
+		&.active > a:hover {
+			color: $gray-darker !important;
+			background-color: $gray-lighter !important;
+			border-bottom: none;
+
+		}
+
 		& > a {
 			&:hover, &.focus {
 				color: $gray-darker !important;

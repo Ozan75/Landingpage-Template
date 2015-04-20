@@ -20,37 +20,37 @@ $LogoSmallWidth:	138px;
 
 $BaseColor:		#70735F;
 
-$gray-darker:	darken($BaseColor, 40%) !default;
-$gray-dark:     darken($BaseColor, 20%) !default;
-$gray:          lighten($BaseColor, 20%) !default;
-$gray-light:    lighten($BaseColor, 40%) !default;
-$gray-lighter:  lighten($BaseColor, 50%) !default;
+$gray-darker:	darken($BaseColor, 40%);
+$gray-dark:     darken($BaseColor, 20%);
+$gray:          lighten($BaseColor, 20%);
+$gray-light:    lighten($BaseColor, 40%);
+$gray-lighter:  lighten($BaseColor, 50%);
 
 
-$brand-primary:         #cc1220 !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #cc1220;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
 
 //** Background color for `<body>`.
-$body-bg:               	lighten($gray-lighter, 8%) !default;
+$body-bg:               	lighten($gray-lighter, 8%);
 //** Global text color on `<body>`.
-$text-color:            	$gray-dark !default;
+$text-color:            	$gray-dark;
 
 //** Global textual link color.
-$link-color:            	$gray-lighter !default;
+$link-color:            	$gray-lighter;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      	darken($link-color, 15%) !default;
+$link-hover-color:      	darken($link-color, 15%);
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:	$gray-lighter !default;
+$component-active-color:	$gray-lighter;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $gray-dark !default;
+$component-active-bg:       $gray-dark;
 
 
 //** Nav Links
-$nav-pills-hover-color:			$gray-dark !default;
+$nav-pills-hover-color:			$gray-lighter;
 $nav-pills-active-bg-color:		transparent !important;
 $border-radius-base:			0px;
 
@@ -58,7 +58,7 @@ $border-radius-base:			0px;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  'Roboto', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  'Roboto', Helvetica, Arial, sans-serif;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
