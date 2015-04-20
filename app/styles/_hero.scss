@@ -5,4 +5,15 @@
   background-size: $HeroEmbed;
   background-position: $HeroPosition;
   height: $HeroHeight;
+
+  & .content {
+
+  	color: $gray-lighter;
+  	padding-top: 10%;
+
+  	& h1 {
+  		font-weight: 100;
+  	} 
+  }
 }
+
